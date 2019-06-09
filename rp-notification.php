@@ -34,7 +34,7 @@
         mkdir("users/".$a["user_id"], 0755, true);
       }
 
-      if(file_exists("users/".$a["user_id"]."/".LAST_Rp_FILE))  {
+      if(file_exists("users/".$a["user_id"]."/".LAST_RP_FILE))  {
         $imaSumRp = $a["point_sum"];
         $maeSumRp = load_file("users/".$a["user_id"]."/".SUM_FILE);
         $imaRp = $imaSumRp - $maeSumRp;
