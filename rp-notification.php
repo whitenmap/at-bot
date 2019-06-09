@@ -18,6 +18,10 @@
     "Twitter ID 2" => "AtCoder ID 2"
   ];
 
+  if(!file_exists("users")) {
+    mkdir("users", 0755, true);
+  }
+
   foreach ($array as $a) {
     if($key = array_search($a["user_id"], $key_arr)) {
       $imaSumRp = 0.0;
